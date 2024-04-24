@@ -20,7 +20,7 @@ const services = {
         type: 'DBRef',
         require: true,
         default: 'None',
-        loc: "Автомобиль",
+        loc: "Умный дом",
         sort: true,
         editable: true,
         collection: 'cards'
