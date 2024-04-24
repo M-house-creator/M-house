@@ -35,7 +35,7 @@ const tarifs = {
     loc: "Цена в рублях (₽)",
     sort: true,
     editable: true,
-    step: 10000,
+    step: 1,
     filter: true,
   },
 };
