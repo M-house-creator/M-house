@@ -27,4 +27,4 @@ const customers = {
         },
     };
 
-    export default customer;
+    export default customers;
