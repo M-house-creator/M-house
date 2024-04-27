@@ -28,8 +28,8 @@ export default function Header({ curPath }) {
         <>
         <header>
             <div className='LogoGroup'>
-                <img src={Logo} width="40px" alt="" />
-                <h1>SPA</h1>
+                <img src={Logo} width="70px" alt="" />
+                <h1>Modern House</h1>
             </div>
 
             <Menu curPath={curPath} />
