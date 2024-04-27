@@ -38,4 +38,5 @@ export default function Container({ curPath })
             {!collectionName && <Index/>}
         </div>
     )
+    
 }
