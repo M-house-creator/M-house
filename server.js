@@ -40,6 +40,7 @@ app.get('/api/get/:CollectionName/', async (req, res) => {
             options.filter._id = new ObjectId(req.query.id);
         }
         
+        
         //search
         if(req.query.q != "") {
             options.search = req.query.q;
