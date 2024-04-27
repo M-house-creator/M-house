@@ -34,8 +34,9 @@ app.get('/api/get/:CollectionName/', async (req, res) => {
 
     if(req.query) {
         options.filter = {};
+
         //get by id element
-        if(req.query.id != 'undefined') {
+        if(req.query && req.query.id) {
             options.filter._id = new ObjectId(req.query.id);
         }
         
