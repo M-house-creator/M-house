@@ -3,6 +3,5 @@ import menu from "./menu.js";
 import install from "./install.js";
 import customers from "./customers.js";
 import work from "./work.js";
-import services from './services.js';
 
-export default {tarifs, menu, install, customers, work, services}; 
+export default {tarifs, menu, install, customers, work,}; 
