@@ -3,7 +3,7 @@ const work = {
         type: "String",
         require: true,
         default: "None",
-        loc: "Типы",
+        loc: "Типы устройств",
         sort: true,
         editable: true,
         searchable: true,
