@@ -1,5 +1,4 @@
 const install = {
-    id: {},
     TITLE: {
       type: "String",
       require: true,
