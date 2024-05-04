@@ -29,10 +29,15 @@ export default function Container({ curPath }) {
 
     return (
         <div className="container">
+
+            {!collectionName && <Index/>}
             {
-                //Если нет названия коллекции, то выводим индексную страницу
-            !collectionName && <Index />
+                curPath === 'customers' && <Form nameForm='customers'></Form>
             }
+            {!collectionName && <Index/>}
+{
+    curPath === 'customers' && <Table nameTable='customers'></Table>
+}
         </div>
     );
 }
