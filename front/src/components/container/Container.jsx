@@ -33,6 +33,14 @@ export default function Container({ curPath })
     return (
         <div className="container">
             {!collectionName && <Index/>}
+            {
+                curPath === 'customers' && <Form nameForm='customers'></Form>
+            }
+            {!collectionName && <Index/>}
+{
+    curPath === 'customers' && <Table nameTable='customers'></Table>
+}
+            
         </div>
     )
     
