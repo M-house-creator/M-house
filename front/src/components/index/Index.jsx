@@ -1,18 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
-import { CChart } from '@coreui/react-chartjs';
+import './style.css';
 
 export default function Index() 
 {
-    const [table, setTable] = useState({
-        body: []
-    });
-    const [pie, setPie] = useState({
-        labels: [],
-        numbers: [],
-        indexes: [],
-        count: 1
-    });
+    
+    
     const [loading, setLoading] = useState(false);    
 
     const fetchTable = useCallback(async () => {
@@ -30,16 +23,9 @@ export default function Index()
             indexes.push(item.INDEXES);
         });
 
-        setPie({
-            labels: labels,
-            numbers: numbers,
-            indexes: indexes,
-            count: labels.length
-        })
+        
 
-        setTable({
-            body: answer
-        })
+        
 
         setLoading(false);
     }, []);
@@ -50,33 +36,36 @@ export default function Index()
         }, [fetchTable]
     );
 
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
+    
 
-    function getColors(count) {
-        if(count > 0) {
-            let arColors = [];
-            let arColorCode = ['A', 'B', 'C', 'D', 'E', 'F', '1', '2', '3', '4', '5', '6', '7', '8', '9' ,'0'];
-            //HEX: RGB, RGBA. 00 00 00 00
-
-            for(let j = 0; j < count; j++) {
-                let color = '#';
-                for(let i =0; i < 6; i++) {
-                    color += arColorCode[getRandomInt(16)]
-                }
-
-                arColors.push(color);
-            }
-
-        }
-        else return false;
-    }
+    
 
 
     return (
         <>
-           
+          <title>Умный дом</title> 
+          <div className="index-page-content">
+<p>Одним из преимуществ умного дома является возможность централизованного управления всеми устройствами через мобильное приложение или
+ голосового помощника. Например, вы можете включить свет или настроить температуру в доме,
+  просто говоря команду своему голосовому помощнику или нажав кнопку на своем смартфоне.</p>
+
+<p>Умные дома также могут быть оснащены системами безопасности, которые мониторят окружающую среду и действия внутри и вокруг дома.
+ Это может включать в себя видеонаблюдение, датчики движения, датчики дыма и угарного газа
+  а также уведомления на мобильные устройства в случае обнаружения чего-либо подозрительного.
+</p>
+
+<p>Умные дома также способствуют энергосбережению, позволяя оптимизировать использование энергии в доме.
+ Например, система умного дома может автоматически регулировать температуру в зависимости от присутствия людей в доме или настроек,
+  что помогает снизить энергозатраты.</p>
+
+<p>Кроме того, умные дома могут быть связаны с другими устройствами и сервисами, 
+такими как умные телевизоры, звуковые системы, домашние кинотеатры и онлайн-сервисы для стриминга музыки и фильмов.</p>
+
+<p>В целом, умный дом предлагает множество преимуществ, таких как повышение комфорта, удобства, безопасности и энергоэффективности.
+ Он представляет собой инновационное решение для современного образа жизни,
+упрощая повседневные задачи и делая нашу жизнь более умной и удобной.</p>
+
+</div>
         </>
     )
 }
