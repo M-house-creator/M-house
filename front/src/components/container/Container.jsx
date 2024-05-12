@@ -34,7 +34,7 @@ export default function Container({ curPath }) {
             {
                 curPath === 'customers' && <Form nameForm='customers'></Form>
             }
-            {!collectionName && <Index/>}
+            
 {
     curPath === 'customers' && <Table nameTable='customers'></Table>
 }
