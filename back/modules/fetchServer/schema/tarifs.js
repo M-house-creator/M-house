@@ -19,15 +19,6 @@ const tarifs = {
     editable: true,
     searchable: true,
   },
-  TIME: {
-    type: "String",
-    require: false,
-    default: "None",
-    loc: "Время установки",
-    sort: true,
-    editable: true,
-    searchable: true,
-  },
   PRICE: {
     type: "Number",
     require: true,
@@ -35,7 +26,7 @@ const tarifs = {
     loc: "Цена в рублях (₽)",
     sort: true,
     editable: true,
-    step: 10000,
+    step: 1,
     filter: true,
   },
 };

@@ -1,8 +1,7 @@
 import tarifs from "./tarifs.js";
 import menu from "./menu.js";
-import models from "./models.js";
-import owners from "./owners.js";
-import cards from "./cards.js";
-import services from './services.js';
+import install from "./install.js";
+import customers from "./customers.js";
+import work from "./work.js";
 
-export default {tarifs, menu, models, owners, cards, services};
+export default {tarifs, menu, install, customers, work,}; 

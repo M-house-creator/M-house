@@ -8,17 +8,13 @@ header {
 
 header .LogoGroup {
     display: flex;
-    width: 60px;
+    width: 40px;
     gap:15px;
 }
 
 header .LogoGroup h1 {
     display:block;
     width:100%;
-    font-size:12px;
+    font-size:18px;
     font-weight: bolder;
-}
-
-header .LogoGroup img {
-    max-height: 40px;
 }

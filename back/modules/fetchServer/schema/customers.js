@@ -1,4 +1,4 @@
-const owners = {
+const customers = {
     _id: {},
         TITLE: {
             type: 'String',
@@ -27,4 +27,4 @@ const owners = {
         },
     };
 
-    export default owners;
+    export default customers;
