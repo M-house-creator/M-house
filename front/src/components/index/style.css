@@ -9,5 +9,10 @@
     width: 535px;
     float:right;
     margin: 0 20px;
-    
+}
+.light{
+border-radius:15px ;
+width: 300px; ;
+float:right ;
+margin:0 20px ;
 }
