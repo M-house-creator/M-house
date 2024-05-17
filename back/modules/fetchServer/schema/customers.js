@@ -25,6 +25,7 @@ const customers = {
             sort: true,
             editable: true
         },
+       
     };
 
-    export default customers;
+    export default customers;   
