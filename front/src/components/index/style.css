@@ -1,44 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
-.index-page-content { font-family: "Sedan SC", serif;
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.index-page-content {
+  font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: oblique;
-    font-size: 29px;
+  font-size: 29px;
 }
-.jpg{
+.jpg {
   border-radius: 15px;
-    width: 535px;
-    float:right;
-    margin: 0 20px;
+  width: 535px;
+  float: right;
+  margin: 0 20px;
 }
-.light{
-border-radius:15px ;
-width: 325px; ;
-float:left ;
-margin:0 20px ;
+.light {
+  border-radius: 15px;
+  width: 325px;
+  float: left;
+  margin: 0 20px;
 }
-.line{
-width: 63%; ;
-height: 8px; ;
-background-color: rgb(255, 170, 0);
-outline: none;
-border: none;
-margin:20px 0px ;
-}
-.line2{
-  width: 75%; ;
-height: 8px; ;
-background-color: rgb(255, 170, 0);
-outline: none;
-border: none;
-margin:20px 0px ;
-}
-.line3{
-  width: 75%; ;
-  height: 8px; ;
+.line {
+  width: 63%;
+  height: 8px;
   background-color: rgb(255, 170, 0);
   outline: none;
   border: none;
-  margin:20px 10px ;
+  margin: 20px 0px;
 }
-
-
+.line2 {
+  width: 75%;
+  height: 8px;
+  background-color: rgb(255, 170, 0);
+  outline: none;
+  border: none;
+  margin: 20px 0px 20px auto;
+}
