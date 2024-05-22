@@ -25,8 +25,9 @@ function App() {
     <div className="App">
       <Header curPath={currentPath}/>
 
-      <Container curPath={currentPath}></Container>
-    </div>
+        <Container curPath={currentPath}></Container>
+      </div>
+      
   );
 }
 
