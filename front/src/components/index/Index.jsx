@@ -43,8 +43,10 @@ export default function Index()
 
     return (
         <>
-          <h1></h1>
+          
+          
           <div className="index-page-content">
+          <img src="./images/black tarif.png" alt="1" className="jpg"></img>   
           <hr className="line"/>
           <img src="./images/smart home.png" alt="1" className="jpg"></img>   
 <p>Одним из преимуществ умного дома является возможность централизованного управления всеми устройствами через мобильное приложение или
