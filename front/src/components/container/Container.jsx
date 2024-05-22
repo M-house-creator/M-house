@@ -3,7 +3,9 @@ import Form from "../form/Form.jsx";
 import Table from "../table/Table.jsx";
 import Index from "../index/Index.jsx";
 import "./style.css";
+import PageInstall from "../pageinstall/PageInstall.jsx"
 import Search from "../search/Search.jsx";
+import "./style.css"
 
 export default function Container({ curPath }) {
     const [row, setRow] = useState({});
