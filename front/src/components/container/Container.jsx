@@ -41,8 +41,19 @@ export default function Container({ curPath }) {
             {curPath === "customers" && <Table nameTable="customers"></Table>}
 
             {curPath === 'install' && <PageInstall></PageInstall>}
+<<<<<<< HEAD
             {curPath === 'tarifs' && <Tarifs></Tarifs>}
             {curPath === 'work' && <Work></Work>}
+=======
+
+            {curPath === 'tarifs' && <tarifs></tarifs>}
+            {curPath === 'work' && <work></work>}
+
+
+            {curPath === 'work' && <work></work>}
+            
+
+>>>>>>> 4f816bcd397a62baad79142ca87c25ceb7e9cb82
         </div>
     );
 }
