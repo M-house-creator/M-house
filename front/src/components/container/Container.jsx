@@ -3,13 +3,15 @@ import Form from "../form/Form.jsx";
 import Table from "../table/Table.jsx";
 import Index from "../index/Index.jsx";
 import "./style.css";
+import PageInstall from "../pageinstall/PageInstall.jsx"
 import Search from "../search/Search.jsx";
+import "./style.css"
 
 export default function Container({ curPath }) {
     const [row, setRow] = useState({});
     const [query, setQuery] = useState("");
     const [collectionName, setCollectionName] = useState(false);
-    console.log(curPath)
+    console.log(curPath);
 
     const handle = (value) => {
         if (value.data) setRow(value.data[0]);
@@ -29,15 +31,12 @@ export default function Container({ curPath }) {
 
     return (
         <div className="container">
+            {!collectionName && <Index />}
+            {curPath === "customers" && <Form nameForm="customers"></Form>}
 
-            {!collectionName && <Index/>}
-            {
-                curPath === 'customers' && <Form nameForm='customers'></Form>
-            }
-            
-{
-    curPath === 'customers' && <Table nameTable='customers'></Table>
-}
+            {curPath === "customers" && <Table nameTable="customers"></Table>}
+
+            {curPath === 'install' && <PageInstall></PageInstall>}
         </div>
     );
 }
