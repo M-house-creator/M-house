@@ -34,8 +34,9 @@ export default function Header({ curPath }) {
 
             <Menu curPath={curPath} />
             <ul>
-                <li>пунтк 1</li>
+                <li><a href='/work'>пункт 1</a></li>
                 <li><a href='/install'>пункт 2</a></li>
+                <li><a href='/taifs'>пункт 3</a></li>
             </ul>
 
             <div className='timer'>{ now.toLocaleTimeString() }</div>
