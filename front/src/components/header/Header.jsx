@@ -36,7 +36,7 @@ export default function Header({ curPath }) {
             <ul>
                 <li><a href='/work'>пункт 1</a></li>
                 <li><a href='/install'>пункт 2</a></li>
-                <li><a href='/taifs'>пункт 3</a></li>
+                <li><a href='/tarifs'>пункт 3</a></li>
             </ul>
 
             <div className='timer'>{ now.toLocaleTimeString() }</div>

@@ -6,6 +6,10 @@ import "./style.css";
 import PageInstall from "../pageinstall/PageInstall.jsx"
 import Search from "../search/Search.jsx";
 import "./style.css"
+import Work from "../../work/work.jsx";
+import "./style.css"
+import Tarifs from "../tarifs/tarifs.jsx";
+import "./style.css"
 
 export default function Container({ curPath }) {
     const [row, setRow] = useState({});
@@ -37,8 +41,8 @@ export default function Container({ curPath }) {
             {curPath === "customers" && <Table nameTable="customers"></Table>}
 
             {curPath === 'install' && <PageInstall></PageInstall>}
-            {curPath === 'tarifs' && <tarifs></tarifs>}
-            {curPath === 'work' && <work></work>}
+            {curPath === 'tarifs' && <Tarifs></Tarifs>}
+            {curPath === 'work' && <Work></Work>}
         </div>
     );
 }
