@@ -21,7 +21,7 @@ const customers = {
             type: 'Email',
             require: false,
             default: 'None',
-            loc: "E-mail",
+            loc: "(Адресс эл почты)",
             sort: true,
             editable: true
         },
