@@ -25,6 +25,16 @@ const customers = {
             sort: true,
             editable: true
         },
+        BRAND: {
+            type: 'DBRef',
+            require: false,
+            default: 'None',
+            loc: "Тариф",
+            sort: true,
+            editable: true,
+            collection: 'brands'
+        }
+        
        
     };
 
