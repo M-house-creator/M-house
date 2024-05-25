@@ -38,8 +38,13 @@ export default function Container({ curPath }) {
 
             {curPath === 'install' && <PageInstall></PageInstall>}
 
+            {curPath === 'tarifs' && <tarifs></tarifs>}
+            {curPath === 'work' && <work></work>}
+
+
             {curPath === 'work' && <work></work>}
             
+
         </div>
     );
 }
