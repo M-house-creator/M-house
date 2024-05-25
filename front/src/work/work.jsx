@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
-import config from "../../params/config";
+import config from "../params/config";
 import "./style.css";
 
-export default function work() {
+export default function Work() {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
         header: [],
-        body: [],
+        data: [],
         sim: []
     });
 
@@ -30,7 +30,7 @@ export default function work() {
             {
                 !loading && <div>
                     {
-                        data.body.map(item => (
+                        data.data.map(item => (
                             <>
                             <span>{item.TITLE}</span>
                             </>

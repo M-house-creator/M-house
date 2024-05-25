@@ -6,7 +6,7 @@ export default function PageInstall() {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
         header: [],
-        body: [],
+        data: [],
         sim: []
     });
 
@@ -15,6 +15,7 @@ export default function PageInstall() {
         const response = await fetch(config.api + "get/install/");
         const answer = await response.json();
 
+        console.log(answer)
         setData(answer);
 
         setLoading(false);
@@ -30,7 +31,7 @@ export default function PageInstall() {
             {
                 !loading && <div>
                     {
-                        data.body.map(item => (
+                        data.data.map(item => (
                             <>
                             <span>{item.TITLE}</span>
                             </>

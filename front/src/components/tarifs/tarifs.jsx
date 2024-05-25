@@ -2,11 +2,11 @@ import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
 import "./style.css";
 
-export default function tarifs() {
+export default function Tarifs() {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState({
         header: [],
-        body: [],
+        data: [],
         sim: []
     });
 
@@ -30,7 +30,7 @@ export default function tarifs() {
             {
                 !loading && <div>
                     {
-                        data.body.map(item => (
+                        data.data.map(item => (
                             <>
                             <span>{item.TITLE}</span>
                             </>
