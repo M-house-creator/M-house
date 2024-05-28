@@ -10,6 +10,8 @@ import Work from "../../work/work.jsx";
 import "./style.css"
 import Tarifs from "../tarifs/tarifs.jsx";
 import "./style.css"
+import About from "../about/about.jsx";
+import "./style.css"
 
 export default function Container({ curPath }) {
     const [row, setRow] = useState({});
@@ -45,6 +47,7 @@ export default function Container({ curPath }) {
             {curPath === 'tarifs' && <Tarifs></Tarifs>}
             {curPath === 'work' && <Work></Work>}
 
+            {curPath === 'about' && <About></About>}
 
             
         </div>
