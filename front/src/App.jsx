@@ -26,6 +26,11 @@ function App() {
       <Header curPath={currentPath}/>
 
         <Container curPath={currentPath}></Container>
+
+        <footer>
+          Разработали: Шляпников Иван, Рябов Матвей<br/>
+          © 2024
+        </footer>
       </div>
       
   );

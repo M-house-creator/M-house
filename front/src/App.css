@@ -40,3 +40,9 @@
   }
 }
 
+footer {
+  width:100%;
+  padding:50px 300px;
+  color:#fff;
+  background:rgb(0, 170, 255)
+}
