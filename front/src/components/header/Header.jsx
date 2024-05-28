@@ -29,17 +29,18 @@ export default function Header({ curPath }) {
         <header>
             <div className='LogoGroup'>
                 <img src={Logo} width="79px" alt="" />
-                <h1>Modern House</h1>
+                <h1>Modern<br/>House</h1>
             </div>
 
             <Menu curPath={curPath} />
-            <ul>
+
+            {/* <ul>
                 <li><a href='/work'>Принцип работы</a></li>
                 <li><a href='/install'>Установка</a></li>
                 <li><a href='/tarifs'>Тарифы</a></li>
                 <li><a href='/customers'>Регистрация</a></li>
                 <li><a href='/about'>О нас</a></li>
-            </ul>
+            </ul> */}
 
             <div className='timer'>{ now.toLocaleTimeString() }</div>
         </header>
