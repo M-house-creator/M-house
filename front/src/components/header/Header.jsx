@@ -28,15 +28,16 @@ export default function Header({ curPath }) {
         <>
         <header>
             <div className='LogoGroup'>
-                <img src={Logo} width="70px" alt="" />
+                <img src={Logo} width="79px" alt="" />
                 <h1>Modern House</h1>
             </div>
 
             <Menu curPath={curPath} />
             <ul>
-                <li><a href='/work'>пункт 1</a></li>
-                <li><a href='/install'>пункт 2</a></li>
-                <li><a href='/tarifs'>пункт 3</a></li>
+                <li><a href='/work'>Принцип работы</a></li>
+                <li><a href='/install'>Установка</a></li>
+                <li><a href='/tarifs'>Тарифы</a></li>
+                <li><a href='/customers'>Регистрация</a></li>
             </ul>
 
             <div className='timer'>{ now.toLocaleTimeString() }</div>
