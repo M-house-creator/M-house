@@ -10,3 +10,9 @@ body {
     font-style: oblique;
     font-size: 29px;
 }
+.png{
+    border-radius: 15px;
+    width: 535px;
+    float: center;
+    margin: 0 200px;
+}

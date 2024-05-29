@@ -78,6 +78,12 @@ export default function Tarifs() {
   подробнее можно узнать в телеграмм канале, 
 который находится
  в вкладке 'о нас'</p>
+ <img
+                    src="./images/black tarif.png"
+                    alt="1"
+                    className="png"
+                ></img>
+                <p>а также сейчас действует акция"Black tarif"</p>
             </div>
         </>
     );

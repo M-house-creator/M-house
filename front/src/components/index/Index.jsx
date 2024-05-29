@@ -31,6 +31,7 @@ export default function Index() {
         <>
             <h1></h1>
             <div className="index-page-content">
+            
                 <hr className="line" />
                 <img
                     src="./images/smart home.png"

@@ -41,6 +41,11 @@ export default function About() {
 
             }
             <div className="install">
+            <img
+                    src="./images/info company.png"
+                    alt="1"
+                    className="png"
+                ></img>
             Первым этапом является выбор умных устройств, которые 
             
        <p> будут установлены в вашем доме 

@@ -41,6 +41,7 @@ export default function PageInstall() {
 
             }
             <div className="install">
+                
             Первым этапом является выбор умных устройств, которые 
             
        <p> будут установлены в вашем доме 
